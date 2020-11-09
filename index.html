@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialized site</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="blue lighten-1 " id = "Home">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo ">Team Ravan</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#Services">SERVICES</a></li>
+        <li><a href="#Gallery">GALLERY</a></li>
+        <li><a href="#Contact">CONTACT</a></li>
+        
+        <li>
+          <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">SIGN</a>
+        </li>  
+
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><img src="./src/ravlogo.png" alt="" class="logo"></li>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#Services">SERVICES</a></li>
+    <li><a href="#Gallery">GALLERY</a></li>
+    <li><a href="#Contact">CONTACT</a></li>
+    
+    <li>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">SIGN UP</a>
+    </li>  
+    
+  </ul>
+
+
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="./src/image1.jpg" class="carimg"></a>
+    <div class="carousel-fixed-item center">
+      <h2 class="white-text">Heading for the Carousel</h2>
+      <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, est!</p>
+      <a class="blue lighten-1 waves-effect waves-light btn">SEND <i class="fa fa-paper-plane"
+          aria-hidden="true"></i></a>
+    </div>
+    <a class="carousel-item" href="#two!"><img src="./src/image2.jpg" class="carimg"></a>
+    <a class="carousel-item" href="#three!"><img src="./src/image3.jpg" class="carimg"></a>
+    <a class="carousel-item" href="#four!"><img src="./src/image4.jpg" class="carimg"></a>
+    <a class="carousel-item" href="#four!"><img src="./src/image5.jpg" class="carimg"></a>
+  </div>
+  <!-- ****************Floating action button starts**************************** -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+  <!-- ****************Floating action button ends**************************** -->
+  <!-- ****************About Us starts**************************** -->
+  <section id = "about">
+    <h2 class="center-align ">About Us</h2>
+
+    <div class="row">
+      <div class="col s4 m4 l4 offset-l4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m6 s12">
+        <img src="./src/image3.jpg" class="responsive-img aboutimg">
+      </div>
+
+      <div class="col m6 s12 center-align">
+        <h4 class="center-align">Who am I?</h4>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsum facilis autem natus error
+          eveniet
+          architecto nihil, perferendis reiciendis veniam animi optio. Iure, consequatur Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Animi.
+        </p>
+        <a href="about.html" class="blue lighten-1 waves-effect waves-light btn center">Know more <i class="fa fa-info"
+            aria-hidden="true" ></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- ****************About Us ends**************************** -->
+
+  <!-- ****************cards starts**************************** -->
+
+  <section id = "Services">
+    <h2 class="center-align ">Our Services</h2>
+    <div class="row">
+      <div class="col s4 m4 l4 offset-l4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m4 s12 l4">
+        <div class="card cardimg">
+          <div class="card-image">
+            <img src="./src/image2.jpg">
+            <span class="card-title">First Service</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+              require little markup to use effectively.</p>
+          </div>
+          <div class=" card-action ">
+            <a href="#" class="blue-text">This is a link</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col m4 s12 l4">
+        <div class="card cardimg">
+          <div class="card-image">
+            <img src="./src/image5.jpg">
+            <span class="card-title">Second Service</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+              require little markup to use effectively.</p>
+          </div>
+          <div class=" card-action ">
+            <a href="#" class="blue-text">This is a link</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col m4 s12 l4">
+        <div class="card cardimg">
+          <div class="card-image">
+            <img src="./src/image4.jpg">
+            <span class="card-title">Third Service</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+              require little markup to use effectively.</p>
+          </div>
+          <div class=" card-action ">
+            <a href="#" class="blue-text">This is a link</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ****************cards ends**************************** -->
+
+
+  <!-- ****************Gallery Starts**************************** -->
+
+  <section id = "Gallery" >
+    <h2 class="center-align ">Our Gallery</h2>
+    <div class="row">
+      <div class="col s4 m4 l4 offset-l4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <img src="./src/image01.jpg" alt="" class="responsive-img galleryimg materialboxed"
+          data-caption="Awesome Nature :) ">
+      </div>
+      <div class="col s12 m4 l4">
+        <img src="./src/image02.jpg" alt="" class="responsive-img galleryimg materialboxed"
+          data-caption="Awesome Nature :) ">
+      </div>
+      <div class="col s12 m4 l4">
+        <img src="./src/image03.jpg" alt="" class="responsive-img galleryimg materialboxed"
+          data-caption="Awesome Nature :) ">
+      </div>
+      <div class="row">
+
+        <div class="col s12 m4 l4">
+          <img src="./src/image04.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+        <div class="col s12 m4 l4">
+          <img src="./src/image05.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+        <div class="col s12 m4 l4">
+          <img src="./src/image01.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col s12 m4 l4">
+          <img src="./src/image02.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+        <div class="col s12 m4 l4">
+          <img src="./src/image03.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+        <div class="col s12 m4 l4">
+          <img src="./src/image04.jpg" alt="" class="responsive-img galleryimg materialboxed"
+            data-caption="Awesome Nature :) ">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ****************cards ends**************************** -->
+
+
+  <!-- ****************Contact us starts**************************** -->
+
+  <section id = "Contact">
+    <h2 class="center-align ">Contact Form</h2>
+    <div class="row">
+      <div class="col s4 m4 l4 offset-l4">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m6 l6 s10 offset-l3">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="First Name" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="moble" type="text" class="validate" data-length="10">
+                <label for="text">Mobile</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>File</span>
+                    <input type="file" multiple>
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+            <button class="btn waves-effect waves-light" type="submit" name="action"
+              onclick="M.toast({html: 'Thanks for joining us...'})">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ****************Contact us ends**************************** -->
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 class="signhead">Sign Up form</h4>
+      
+      <div class="row">
+        <div class="col m6 l6 s10 offset-l3">
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="First Name" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="moble" type="text" class="validate" data-length="10">
+                  <label for="text">Mobile</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Textarea</label>
+                    </div>
+                  </div>
+                  <div class="file-field input-field">
+                    <div class="btn">
+                      <span>File</span>
+                      <input type="file" multiple>
+                    </div>
+                    <input type="text" class="datepicker">
+                  </div>
+                </form>
+              </div>
+
+
+              <button class="btn waves-effect waves-light" type="submit" name="action"
+                onclick="M.toast({html: 'Thanks for joining us...'})">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+          
+
+  <!-- ****************Footer starts**************************** -->
+  
+  <footer class="page-footer blue lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><a class="TLink" href="#Home">TEAM RAVAN</a></h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Useful Links</h5>
+          <ul >
+            <li><a class="ULinks" href="#about">About</a></li>
+            <li><a class="ULinks" href="#Services">Services</a></li>
+            <li><a class="ULinks" href="#Gallery">Gallery</a></li>
+            <li><a class="ULinks" href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="Copyright container">
+      Copyright ©2020 | All rights reserved | CODE AND LEARN WITH A B 
+      
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
+    </div>
+  </footer>
+  
+  <!-- ****************Footer ends**************************** -->
+
+
+
+
+
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true,
+        duration: 350
+      });
+      $('.fixed-action-btn').floatingActionButton();
+      $('.materialboxed').materialbox();
+      $('input#moble').characterCounter();
+      $('.modal').modal();
+      $('.datepicker').datepicker();
+
+    });
+
+
+  </script>
+  <script>
+
+    $('.count').counterUp({
+        delay: 10,
+        time: 1000
+    });
+    
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollfunction()};
+
+    function scrollfunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display="block";
+        } else{
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+  </script>
+
+</body>
+
+
+</html>
